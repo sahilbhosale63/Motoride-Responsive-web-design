@@ -1,0 +1,317 @@
+@font-face{
+    font-family: 'Changa-Regular';
+    src: url("/fonts/changa/Changa-Regular.ttf");
+}
+
+@font-face{
+    font-family:'Signika-Regular';
+    src: url("/fonts/signika/Signika-Regular.ttf"); 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+/* Header navigation */
+/* #container{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+#logo h2{
+    color: #fff;
+    margin-left: 50px;
+    font-family: 'Changa-Regular';
+}
+
+#logo h2 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul{
+    margin-top: 12px;
+    
+}
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 16px;
+    color: #fff;
+}
+
+header nav ul li a{
+    color: #db0000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-family: 'Changa-Regular';
+}
+
+header nav ul li a:hover{
+    color: #b0bec5;
+    text-decoration: none;
+}
+
+.current a{
+    color: #fff;
+} */
+
+
+/* Header navigation */
+#container{
+    width: 100%;
+}
+
+#logo{
+    color: #fff;
+    font-family: 'Changa-Regular';
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.bar #myNavbar ul li a{
+    color: #db0000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Changa-Regular';
+}
+
+.bar #myNavbar ul li a:hover{
+    color: #b0bec5;
+    text-decoration: none;
+}
+
+.navbar { 
+    margin-bottom: 0 
+}
+
+.bar #myNavbar .active a{
+    color: #fff;
+}
+
+
+
+/* Video Section */
+
+#video{ 
+    background: linear-gradient(
+      rgb(255, 0, 0),
+      rgba(0, 0, 0, 0.966)
+    );
+}
+
+.vdo-container iframe{
+    width: 100%;
+    padding: 50px 120px;
+
+}
+
+.vdo-container h2{
+    margin: auto;
+    color: #fff;
+}
+
+/* boxes */
+#boxes{
+    padding: 30px;
+}
+
+.box-container{
+    display: flex;
+}
+
+.box-online{
+    display: flex;
+}
+
+#boxes .box{
+    text-align: center;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 130px;
+}
+
+#boxes .box h3{
+    font-size: 1.8em;
+    padding-top: 10px;
+    font-family: 'Changa-Regular';
+    font-weight: 600;
+}
+
+#boxes .box p{
+    font-size: 1.1em;
+    font-family: 'Signika-Regular';
+}
+
+/* divider */
+.vl-one {
+    border: 0.5px solid #9e9e9e;
+    height: 270px;
+    position: absolute;
+    left: 34%;
+    margin-left: -3px;
+}
+
+.vl-two {
+    border: 0.5px solid #9e9e9e;
+    height: 270px;
+    position: absolute;
+    right: 34%;
+    margin-right: 10px;
+}
+
+
+/* Footer */
+#footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 110px;
+    background-color: #000;
+}
+
+#footer-container div ul{
+    margin: auto;
+    margin-top: 10px;
+}
+
+#footer-container div ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.fab{
+    color: #db0000;
+}
+#copy h3{
+    font-size: 1.1em;
+    color: #fff;
+    font-family: 'Changa-Regular';
+}
+
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+
+.fa-google-plus-g:hover{
+    color: #DE564A;
+}
+
+.fa-facebook-f:hover{
+    color: #425F9C;
+}
+
+.fa-youtube:hover{
+    color: #FF0000;
+}
+
+.fa-instagram:hover{
+    color: #D03088;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 768px){
+
+
+    .vdo-container iframe{
+        padding: 0px;
+    }
+
+    .box-container{
+        display: block;
+    }
+
+    .box-online, .box-down{
+        width: 100%;
+    }
+
+    #boxes .box img{
+        width: 100px;
+    }
+    #boxes .box h3{
+        font-size: 1.4em;
+        margin-top: 0px;
+    }
+
+    #boxes .box p{
+        font-size: 1em;
+    }
+
+    .vl-two{
+        display: none;
+    }
+
+    .vl-one {
+        border: 0.5px solid #9e9e9e;
+        height: 190px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        margin-top: 25px;
+    }
+
+    #footer-container #social ul{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    #footer-container #social ul li{
+        font-size: 12px;
+        padding: 0px 1px;
+    }
+
+    #copy h3{
+        font-size: 14px;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 560px){
+    .vl-one{
+        display: none;
+    }
+    #boxes .box img{
+        width: 80px;
+    }
+
+    #boxes .box h3{
+        font-size: 1.2em;
+        margin-top: 0px;
+    }
+
+    #boxes .box p{
+        font-size: 0.9em;
+    }
+}
+
+@media(max-width: 992px){
+    .vdo-container iframe{
+        padding: 20px;
+    }
+}
+
+@media(max-width: 800px){
+    .vl-one, .vl-two{
+        margin-top: 25px;
+    }
+}
+
+@media(max-width: 300px){
+    
+    #footer-container #social ul li{
+        font-size: 10px;
+    }
+}

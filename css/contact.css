@@ -1,0 +1,259 @@
+@font-face{
+    font-family: 'Changa-Regular';
+    src: url("/fonts/changa/Changa-Regular.ttf");
+}
+
+@font-face{
+    font-family:'Signika-Regular';
+    src: url("/fonts/signika/Signika-Regular.ttf"); 
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Header navigation */
+#container{
+    width: 100%;
+}
+
+#logo{
+    color: #fff;
+    font-family: 'Changa-Regular';
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.bar #myNavbar ul li a{
+    color: #db0000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Changa-Regular';
+}
+
+.bar #myNavbar ul li a:hover{
+    color: #b0bec5;
+    text-decoration: none;
+}
+
+.navbar { 
+    margin-bottom: 0 
+}
+
+.bar #myNavbar .active a{
+    color: #fff;
+}
+
+#main{
+    display: flex;
+}
+
+#map{
+    height: 500px;
+    width: 50%;
+}
+
+main{
+    background-color: #db0000;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.info label{
+    font-size: 1.3em;
+    font-family: 'Changa-Regular';
+    color: #fff;
+    margin-bottom: 1px;
+}
+
+.info h3{
+    margin-bottom: 18px;
+    color: #fff;
+    font-family: 'Signika-Regular';
+    font-size: 1.2em;
+}
+
+
+
+/* Enquiry form section */
+section{
+    background: #fff url("/images/bg.svg") no-repeat bottom right;
+    background-size: 100%;
+    height: 100%;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.form form h2{
+    font-family: 'Changa-Regular';
+    margin-bottom: 20px;
+    color: #3e2723;
+    font-weight: 900;
+}
+.form form label{
+    font-size: 1.2em;
+    font-family: 'Signika-Regular';
+    color: #1b0000;
+}
+
+.form form input, textarea{
+    margin-bottom: 20px;
+    width: 22em;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-style: none;
+    border: 1px solid #000;
+}
+
+.form form button{
+    padding: 10px 40px;
+    margin: 20px 70px 30px 70px;
+    color: #fff;
+    background: #db0000;
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Signika-Regular';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.8em;
+    box-shadow: 1px 2px 6px rgba(0.5, 0, 0, .7);
+}
+
+
+/* Footer */
+#footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 110px;
+    background-color: #000;
+}
+
+#footer-container div ul{
+    margin: auto;
+    margin-top: 10px;
+}
+
+#footer-container div ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.fab{
+    color: #db0000;
+}
+#copy h3{
+    font-size: 1.1em;
+    color: #fff;
+    font-family: 'Changa-Regular';
+}
+
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+
+.fa-google-plus-g:hover{
+    color: #DE564A;
+}
+
+.fa-facebook-f:hover{
+    color: #425F9C;
+}
+
+.fa-youtube:hover{
+    color: #FF0000;
+}
+
+.fa-instagram:hover{
+    color: #D03088;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 768px){
+
+    /* Main Section */
+    #main{
+        display: block;
+    }
+
+    #map{
+        width: 100%;
+    }
+
+    .info{
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .info label{
+        font-size: 1.2em;
+    }
+    
+    
+
+    /* Enquiry Form Section */
+    .form form{
+        padding: 0 20px;
+    }
+    .form form h2{
+        font-size: 1.8em;
+        padding-top: 30px;
+    }
+
+    .form form label{
+        font-size: 1em;
+    }
+
+    .form form input{
+        width: 18em;
+        padding: 6px 10px;
+    }
+
+    .form form textarea{
+        width: 18em;
+        height: 5em;
+    }
+
+    /* footer */
+    #footer-container #social ul{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    #footer-container #social ul li{
+        font-size: 12px;
+        padding: 0px 1px;
+    }
+
+    #copy h3{
+        font-size: 14px;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 300px){
+    
+    #footer-container #social ul li{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,280 @@
+@font-face{
+    font-family: 'Changa-Regular';
+    src: url("/fonts/changa/Changa-Regular.ttf");
+}
+
+@font-face{
+    font-family:'Signika-Regular';
+    src: url("/fonts/signika/Signika-Regular.ttf"); 
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* header */
+#container{
+    width: 100%;
+}
+
+#logo{
+    color: #fff;
+    font-family: 'Changa-Regular';
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.bar #myNavbar ul li a{
+    color: #db0000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Changa-Regular';
+}
+
+.bar #myNavbar ul li a:hover{
+    color: #b0bec5;
+    text-decoration: none;
+}
+
+.navbar { 
+    margin-bottom: 0;
+}
+
+.bar #myNavbar .active a{
+    color: #fff;
+}
+
+.item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgb(0, 0, 0)
+    );
+  }
+
+
+/* arrow */
+.fa-arrow-circle-left:hover, .fa-arrow-circle-right:hover{
+    color: #1DA1F2;
+}
+
+
+/* Box section */
+
+.box{
+    display: flex;
+    background: brown;
+    padding: 50px;
+    color: #fff;
+}
+
+.box-a, .box-b{
+    text-align: center;
+    padding: 20px;
+}
+
+.vl{
+    border: 0.5px solid #fff;
+    height: 25em;
+    margin: auto;
+}
+
+hr{
+    display: none;
+}
+
+.box-a img{
+    width: 300px;
+}
+
+.box-a h2, .box-b h2{
+    font-family: 'Changa-Regular';
+}
+
+.box-a p, .box-b p, .box-b ol li{
+    font-family:'Signika-Regular';
+}
+
+
+
+/* marquee */
+#marquee{
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+
+.mar-head{
+    font-family: 'Changa-Regular';
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.mar-list{
+    font-family:'Signika-Regular';
+    padding-left: 20px;
+    font-size: 1.5em;
+    line-height: 32px;
+}
+
+
+
+
+/* Footer */
+#footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 110px;
+    background-color: #000;
+}
+
+#footer-container div ul{
+    margin: auto;
+    margin-top: 10px;
+}
+
+#footer-container div ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.fab{
+    color: #db0000;
+}
+#copy h3{
+    font-size: 1.1em;
+    color: #fff;
+    font-family: 'Changa-Regular';
+}
+
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+
+.fa-google-plus-g:hover{
+    color: #DE564A;
+}
+
+.fa-facebook-f:hover{
+    color: #425F9C;
+}
+
+.fa-youtube:hover{
+    color: #FF0000;
+}
+
+.fa-instagram:hover{
+    color: #D03088;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 768px){
+
+    /* boxes section */
+    .box{
+        display: block;
+        padding: 30px;
+    }
+
+    .vl{
+        display: none;
+    }
+
+    hr{
+        display: block;
+        margin: 0 50px;
+    }
+
+    .inner-box h2{
+        font-size: 1.6em;
+    }
+
+    .inner-box img{
+        width: 250px;
+    }
+
+    #marquee{
+        padding: 50px;
+    }
+
+    #marquee .mar-head{
+        padding-top: 50px;
+        font-size: 1.2em;
+    }
+
+    #marquee .mar-list{
+        font-size: 1.3em;
+    }
+
+
+    /* footer */
+   
+    #footer-container #social ul{
+        text-align: center;
+    }
+    #footer-container #social ul li{
+        font-size: 12px;
+        padding: 0px 1px;
+    }
+
+    #copy h3{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 450px){
+
+    .box{
+        padding: 10px;
+    }
+    .inner-box{
+        padding: 4px;
+    }
+    .inner-box h2{
+        font-size: 1.4em;
+    }
+
+    .inner-box p, .inner-box ol li{
+        font-size: 0.9em;
+        padding-top: 10px;
+    }
+
+
+    .inner-box img{
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    #marquee{
+        
+        margin: 0;
+    }
+    #marquee .mar-list{
+        line-height: 25px;
+        margin: -30px;
+    }
+}
+
+@media(max-width: 300px){
+    
+    #footer-container #social ul li{
+        font-size: 10px;
+    }
+}

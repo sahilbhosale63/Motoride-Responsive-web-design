@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/contact.css">
+
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <header>
+            
+        <div id="container">
+            <nav class="bar navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span> 
+                    </button>
+                    <a id="logo" class="navbar-brand" href="index.html">MotorRider</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About Us</a></li> 
+                      <li class="active"><a href="#">Contact Us</a></li> 
+                    </ul>
+                  </div>
+                </div>
+              </nav> 
+        </div>
+    </header>
+
+    <main>
+        <div id="main">
+            <div id="map">
+            </div>
+            <div class="info">
+                <label for="address">Address :-</label>
+                <h3>B- 149/8, Government Colony,<br> Near Jogger's Park, Bandra East,<br> Mumbai-51.</h3>
+                
+                <label for="contact">Contact No :-</label>
+                <h3>+91 8879214087</h3>
+
+                <label for="email">Email ID :-</label>
+                <h3>sahilbhosale63@live.com</h3>
+
+                
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="form">
+            <form action="">
+                <h2>Enquiry Form</h2>
+                <label for="first-name">First Name:</label>
+                <input type="text" placeholder="John">
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" placeholder="Doe">
+
+                <label for="email">Email ID:</label>
+                <input type="email" placeholder="Enter Email">
+
+                <label for="title">Title:</label>
+                <input type="text" placeholder="title">
+
+                <label for="comment">Comment:</label>
+                <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer-container">
+                    
+            <div id="social">
+                <ul class="active">
+                    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="https://plus.google.com/discover" target="_blank"><i class="fab fa-google-plus-g fa-2x"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <div id="copy">
+                <h3>MotorRider, Copyright &copy; 2018</h3>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6Jd7pqWFBOnkEROzlfzHG_zmMdKuASc4&callback=initMap"
+    async defer></script>
+
+    <script type="text/javascript">
+    
+        // Initialize and add the map
+        function initMap() {
+        // The location of Uluru
+        var uluru = {lat: 19.0760, lng: 72.8777};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 12, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+
+
+        // Menu Toggle
+        jQuery(document).ready(function() {
+	        jQuery('.menu-icon').click(function(e) {
+		    jQuery(this).toggleClass('active');
+		    jQuery('#container nav .menu ul').toggleClass('active');
+
+		    e.preventDefault();
+	        });
+        });
+    </script>
+</body>
+</html>
