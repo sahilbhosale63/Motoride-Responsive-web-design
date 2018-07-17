@@ -3,7 +3,7 @@
 # Home Page
 ![pic1](https://user-images.githubusercontent.com/21124445/42833567-0d2b6bc6-8a12-11e8-9b02-1fd62b3ea0ee.png)
 ![pic2](https://user-images.githubusercontent.com/21124445/42833568-0d618ca6-8a12-11e8-8525-021c04dc505c.png)
-![pic3](https://user-images.githubusercontent.com/21124445/42833570-0d987f90-8a12-11e8-8572-024af59d2a4e.png)
+![pic3](https://user-images.githubusercontent.com/21124445/42833769-c4528e1a-8a12-11e8-9036-f9573ad792af.png)
 
 # About Us Page
 ![pic4](https://user-images.githubusercontent.com/21124445/42833571-0dcf1fd2-8a12-11e8-9c62-0b8a78818f8d.png)
