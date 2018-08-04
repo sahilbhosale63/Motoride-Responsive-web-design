@@ -1,5 +1,11 @@
 # Motoride-Responsive-web-design
 
+## Screenshots
+
+| Desktop  | Mobile |
+| :-----------: | :-----------: |
+| <img src="https://user-images.githubusercontent.com/21124445/43677824-322ad39a-9826-11e8-88ff-ca75ee36ac00.png" width="80%">  | <img src="https://user-images.githubusercontent.com/21124445/43677825-3263ab8e-9826-11e8-8418-a551c4a3e278.png" width="80%" >  |
+
 # Home Page
 ![pic1](https://user-images.githubusercontent.com/21124445/42833567-0d2b6bc6-8a12-11e8-9b02-1fd62b3ea0ee.png)
 ![pic2](https://user-images.githubusercontent.com/21124445/42833568-0d618ca6-8a12-11e8-8525-021c04dc505c.png)
