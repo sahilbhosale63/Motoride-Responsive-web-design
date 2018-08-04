@@ -1,6 +1,8 @@
 # Motoride-Responsive-web-design
 
 This website was created in HTML5, CSS3, Bootstrap.
+
+
 ## Screenshots
 
 | Desktop  | Mobile |
